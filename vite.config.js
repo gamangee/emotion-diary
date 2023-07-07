@@ -1,15 +1,15 @@
-import { defineConfig } from "vite";
-import { resolve } from "node:path";
-import react from "@vitejs/plugin-react";
-import macro from "vite-plugin-babel-macros";
+import { defineConfig } from 'vite';
+import { resolve } from 'node:path';
+import react from '@vitejs/plugin-react';
+import macro from 'vite-plugin-babel-macros';
 
 export default defineConfig({
   plugins: [react(), macro()],
   resolve: {
-    alias: [{ find: "@", replacement: resolve(__dirname, "./src") }],
+    alias: [{ find: '@', replacement: resolve(__dirname, './src') }],
   },
   server: {
-    host: "localhost",
+    host: 'localhost',
     port: 3000,
   },
   css: {
