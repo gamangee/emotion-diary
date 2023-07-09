@@ -24,7 +24,7 @@ const dayBtnAlign = css`
   align-items: center;
   width: 40px;
   height: 40px;
-  margin: 10px 0;
+  margin: 3px 0;
   position: relative;
 `;
 
@@ -88,8 +88,8 @@ export default function DayEmotion({ calendar, score, day }) {
     <div>
       <div css={dayScoreBtn}>{day}</div>
       <div css={btnAlign}>
-        {scoreColors.map((color, index) => (
-          <div key={color} css={dayBtnAlign}>
+        {scoreColors?.map((color, index) => (
+          <div key={index} css={dayBtnAlign}>
             <button
               id={-5 + index}
               css={dayBtn(color, activeScore === -5 + index)}

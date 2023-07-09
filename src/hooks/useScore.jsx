@@ -62,13 +62,13 @@ export default function useScore() {
     '#f26a4f',
     '#f6c752',
     '#9bcd64',
-    '#45c7a8',
     '#4bbae0',
-    '#2d77d8',
-    '#a78de5',
-    '#7153bc',
-    '#e582b9',
-    '#d2398d',
+    '#2d76d8',
+    '#4bbae0',
+    '#9bcd64',
+    '#f6c752',
+    '#f26a4f',
+    '#e55261',
   ];
 
   return {
