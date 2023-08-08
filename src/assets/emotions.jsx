@@ -1,7 +1,7 @@
 export const PlusFive = () => (
   <svg
-    width="50"
-    height="50"
+    width="35"
+    height="35"
     viewBox="0 0 222 222"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -39,8 +39,8 @@ export const PlusFive = () => (
 
 export const PlusFour = () => (
   <svg
-    width="50"
-    height="50"
+    width="35"
+    height="35"
     viewBox="0 0 222 222"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -446,8 +446,8 @@ export const PlusFour = () => (
 
 export const PlusThree = () => (
   <svg
-    width="50"
-    height="50"
+    width="35"
+    height="35"
     viewBox="0 0 222 222"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -473,8 +473,8 @@ export const PlusThree = () => (
 
 export const PlusTwo = () => (
   <svg
-    width="50"
-    height="50"
+    width="35"
+    height="35"
     viewBox="0 0 222 222"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -524,8 +524,8 @@ export const PlusTwo = () => (
 
 export const PlusOne = () => (
   <svg
-    width="50"
-    height="50"
+    width="35"
+    height="35"
     viewBox="0 0 222 222"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -551,8 +551,8 @@ export const PlusOne = () => (
 
 export const Zero = () => (
   <svg
-    width="50"
-    height="50"
+    width="35"
+    height="35"
     viewBox="0 0 222 222"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -594,8 +594,8 @@ export const Zero = () => (
 
 export const MinusOne = () => (
   <svg
-    width="50"
-    height="50"
+    width="35"
+    height="35"
     viewBox="0 0 222 222"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -629,8 +629,8 @@ export const MinusOne = () => (
 
 export const MinusTwo = () => (
   <svg
-    width="50"
-    height="50"
+    width="35"
+    height="35"
     viewBox="0 0 222 222"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -664,8 +664,8 @@ export const MinusTwo = () => (
 
 export const MinusThree = () => (
   <svg
-    width="50"
-    height="50"
+    width="35"
+    height="35"
     viewBox="0 0 222 222"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -699,8 +699,8 @@ export const MinusThree = () => (
 
 export const MinusFour = () => (
   <svg
-    width="50"
-    height="50"
+    width="35"
+    height="35"
     viewBox="0 0 222 222"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -742,8 +742,8 @@ export const MinusFour = () => (
 
 export const MinusFive = () => (
   <svg
-    width="50"
-    height="50"
+    width="35"
+    height="35"
     viewBox="0 0 222 222"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

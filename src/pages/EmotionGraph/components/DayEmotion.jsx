@@ -1,6 +1,19 @@
 /* eslint-disable react/prop-types */
 import { css } from '@emotion/react';
 import { useEffect, useState } from 'react';
+import {
+  MinusFive,
+  MinusFour,
+  MinusOne,
+  MinusThree,
+  MinusTwo,
+  PlusFive,
+  PlusFour,
+  PlusOne,
+  PlusThree,
+  PlusTwo,
+  Zero,
+} from '../../../assets/emotions';
 
 const dayScoreBtn = css`
   display: flex;
@@ -59,6 +72,13 @@ const rowLine = (color, isLastDay) => css`
   display: ${isLastDay ? 'none' : 'block'};
 `;
 
+const emotionAlign = css`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
 export default function DayEmotion({ calendar, score, day }) {
   const { year, month, daysFromMonth } = calendar;
   const { saveDailyScore, scoreColors, dailyScore } = score;
@@ -84,6 +104,35 @@ export default function DayEmotion({ calendar, score, day }) {
 
   const isLastDay = daysFromMonth.length === day;
 
+  const renderScoreComponent = () => {
+    switch (activeScore) {
+      case 5:
+        return <PlusFive />;
+      case 4:
+        return <PlusFour />;
+      case 3:
+        return <PlusThree />;
+      case 2:
+        return <PlusTwo />;
+      case 1:
+        return <PlusOne />;
+      case 0:
+        return <Zero />;
+      case -5:
+        return <MinusFive />;
+      case -4:
+        return <MinusFour />;
+      case -3:
+        return <MinusThree />;
+      case -2:
+        return <MinusTwo />;
+      case -1:
+        return <MinusOne />;
+      default:
+        return null;
+    }
+  };
+
   return (
     <div>
       <div css={dayScoreBtn}>{day}</div>
@@ -94,7 +143,11 @@ export default function DayEmotion({ calendar, score, day }) {
               id={-5 + index}
               css={dayBtn(color, activeScore === -5 + index)}
               onClick={() => clickToSaveDailyScore(-5 + index)}
-            />
+            >
+              <div css={emotionAlign}>
+                {activeScore === -5 + index && renderScoreComponent()}
+              </div>
+            </button>
             <div css={colLine(color)}></div>
             <div css={rowLine(color, isLastDay)}></div>
           </div>
